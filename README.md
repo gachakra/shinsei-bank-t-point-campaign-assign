@@ -1,9 +1,24 @@
+# Quick start
+## 1. Run init-script
 ```bash
-docker build -t shinsei-bank-t-point-campaign-assign .
+# This script copies YAML configuration files
+# and creates and loads plist file as OSX Launch Agent 
+./init.sh
+```
+## 2. Then configure your settings on copied yml files below
+- `src/main/resources/form.yml`
+- `src/main/resources/slack.yml`
 
-docker run \
-  -v $PWD/datasources:/usr/local/datasources \
-  -v $PWD/logs:/usr/local/logs \
-  -e TZ=Asia/Tokyo \
-  --rm shinsei-bank-t-point-campaign-assign:latest
+# While developing
+## Build application Docker image
+```bash
+./build.sh
+```
+## Run application via Docker container
+```bash
+./run.sh
+```
+## Build application Docker image and run it.
+```bash
+./build-run.sh
 ```
