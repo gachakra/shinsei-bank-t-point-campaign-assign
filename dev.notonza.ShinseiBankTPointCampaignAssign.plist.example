@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>dev.notonza.ShinseiBankTPointCampaignAssign</string>
+        <key>UserName</key>
+        <string>${USER}</string>
+        <key>WorkingDirectory</key>
+        <string>${PROJECT_ROOT}</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>./run-app.sh</string>
+        </array>
+        <!--        <key>StartInterval</key>-->
+        <!--        <integer>30</integer>-->
+        <key>StartCalendarInterval</key>
+        <dict>
+            <key>Day</key>
+            <integer>1</integer>
+        </dict>
+        <key>StandardOutPath</key>
+        <string>./logs/shinsei-bank-t-point-campaign-assign-launchd.out</string>
+        <key>StandardErrorPath</key>
+        <string>./logs/shinsei-bank-t-point-campaign-assign-launchd.err</string>
+    </dict>
+</plist>
