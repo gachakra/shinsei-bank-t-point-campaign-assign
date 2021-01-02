@@ -1,0 +1,9 @@
+site:
+  url: https://webform.shinseibank.com/webapp/form/19913_xldb_4/index.do?lid=p
+
+form:
+  userAgent: ''
+  account: 9999999999
+  tPointNumber16Digits: 9999999999999999
+  birthDate: 2020-02-02
+  email: user@example.com
