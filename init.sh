@@ -10,8 +10,8 @@ echo -e "Copying example file of YAML configuration files"
 cp -an src/main/resources/form.yml.example src/main/resources/form.yml
 cp -an src/main/resources/slack.yml.example src/main/resources/slack.yml
 
-echo -e "Please congifure settings on src/main/resources/form.yml"
-echo -e "Please congifure settings on src/main/resources/slack.yml"
+echo -e "Please configure settings on src/main/resources/form.yml"
+echo -e "Please configure settings on src/main/resources/slack.yml"
 
 ###########################################################################
 echo -e "Copying example file of $PLIST"
