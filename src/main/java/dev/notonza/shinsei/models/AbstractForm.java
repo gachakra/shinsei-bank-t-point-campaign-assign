@@ -54,7 +54,7 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
             return this;
         }
 
-        throw new IllegalArgumentException(
+        throw new AssertionError(
             "Unexpected value type with selector [" + inputElement.selector() + "]\n"
                 + "Value type [" + inputValueType.getName() + "]"
         );
