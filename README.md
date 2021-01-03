@@ -1,6 +1,6 @@
 # shinse-bank-t-point-campaign-assign
 
-This app automatically visits Shinsei Bank T-point campaign page and assigns the campaign every first day of month via OS X Launch Agent. Now you can earn what little T-points.
+This app automatically visits [Shinsei Bank T-point campaign page](https://webform.shinseibank.com/webapp/form/19913_xldb_4/index.do?lid=p) and assigns the campaign every first day of month via OS X Launch Agent. Now you can earn what little T-points.
 
 ## Quick start
 ### 1. Run init-script
@@ -19,9 +19,9 @@ This app automatically visits Shinsei Bank T-point campaign page and assigns the
     birthDate:
     email:
   ```
-- `src/main/resources/slack.yml`
+- `src/main/resources/slack.yml` (Optional)
   
-  Create Slack app for reporting here https://api.slack.com/apps
+  Create Slack app for reporting [here](https://api.slack.com/apps)
    ```yaml
    channelId:
    botToken: 
