@@ -1,5 +1,6 @@
-package dev.notonza.shinsei.repository;
+package dev.notonza.shinsei.infrastructure;
 
+import dev.notonza.shinsei.models.JobExecutionHistoryRepository;
 import dev.notonza.shinsei.models.TaskResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.input.ReversedLinesFileReader;
@@ -19,7 +20,7 @@ import java.util.Arrays;
  * Created on 2020/12/07.
  */
 @Slf4j
-final class JobExecutionHistoryFile implements JobExecutionHistoryRepository {
+final public class JobExecutionHistoryFile implements JobExecutionHistoryRepository {
 
     private final static Path FILE_PATH = Paths.get("datasources/job-execution-history.tsv");
 

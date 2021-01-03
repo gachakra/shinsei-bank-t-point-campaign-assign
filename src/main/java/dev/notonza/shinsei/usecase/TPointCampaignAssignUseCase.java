@@ -9,7 +9,7 @@ import dev.notonza.shinsei.models.complete_page.CompletePage;
 import dev.notonza.shinsei.models.complete_page.CompletePageSentenceNotSeenException;
 import dev.notonza.shinsei.models.confirm_page.ConfirmPage;
 import dev.notonza.shinsei.models.first_page.FirstPage;
-import dev.notonza.shinsei.repository.JobExecutionHistoryRepository;
+import dev.notonza.shinsei.models.JobExecutionHistoryRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.greenrobot.eventbus.EventBus;
 import org.jetbrains.annotations.Async;

@@ -1,7 +1,7 @@
-package dev.notonza.shinsei.repository;
+package dev.notonza.shinsei.models;
 
 import com.google.inject.ImplementedBy;
-import dev.notonza.shinsei.models.TaskResult;
+import dev.notonza.shinsei.infrastructure.JobExecutionHistoryFile;
 
 import java.time.LocalDateTime;
 
