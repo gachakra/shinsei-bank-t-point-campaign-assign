@@ -16,6 +16,6 @@ public class FoundTaskAlreadyDoneThisMonth extends AbstractEvent {
 
     @Override
     public String getMessage() {
-        return "Campaign assign already done this month. Latest succeeded date time was [" + latestSucceededAt + "]";
+        return "Campaign assign already done this month. Latest succeeded date time is [" + latestSucceededAt + "]";
     }
 }

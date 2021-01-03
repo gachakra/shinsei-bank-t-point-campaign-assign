@@ -42,7 +42,7 @@ launchctl load ~/Library/LaunchAgents/"$PLIST"
 if [[ $(launchctl list | grep dev.notonza.ShinseiBankTPointCampaignAssign) == "-	0	$PLIST_NAME" ]]; then
     echo -e "~/Library/LaunchAgents/$PLIST was successfully loaded."
 else
-    echo -e "Something wrong happened while loading ~/Library/LaunchAgents/$PLIST"
+    echo -e "Something went wrong while loading ~/Library/LaunchAgents/$PLIST"
 fi
 
 # launchctl start ~/Library/LaunchAgents/"$PLIST"
