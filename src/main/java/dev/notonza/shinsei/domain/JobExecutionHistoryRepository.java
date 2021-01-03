@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.models;
+package dev.notonza.shinsei.domain;
 
 import com.google.inject.ImplementedBy;
 import dev.notonza.shinsei.infrastructure.JobExecutionHistoryFile;

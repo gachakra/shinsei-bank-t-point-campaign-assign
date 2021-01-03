@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.models.confirm_page;
+package dev.notonza.shinsei.domain.confirm_page;
 
 import dev.notonza.shinsei.config.FormConfiguration;
 import org.jsoup.Connection;

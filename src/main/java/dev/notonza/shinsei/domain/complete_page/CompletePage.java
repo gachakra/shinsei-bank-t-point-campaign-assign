@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.models.complete_page;
+package dev.notonza.shinsei.domain.complete_page;
 
 import org.jsoup.Connection;
 

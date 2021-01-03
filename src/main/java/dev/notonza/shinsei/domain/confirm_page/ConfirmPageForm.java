@@ -1,6 +1,6 @@
-package dev.notonza.shinsei.models.confirm_page;
+package dev.notonza.shinsei.domain.confirm_page;
 
-import dev.notonza.shinsei.models.AbstractForm;
+import dev.notonza.shinsei.domain.AbstractForm;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.FormElement;
