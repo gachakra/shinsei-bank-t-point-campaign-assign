@@ -1,5 +1,6 @@
 package dev.notonza.shinsei.report;
 
+import com.google.common.base.Strings;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.slack.api.Slack;
@@ -36,6 +37,10 @@ public class SlackReporter {
     }
 
     public void postToChannel(String message) {
+        if (Strings.isNullOrEmpty(botToken) || Strings.isNullOrEmpty(channelId)) {
+            log.warn("Some Slack configurations might be empty. Reporting is not executed.");
+            return;
+        }
 
         Slack slack = Slack.getInstance();
         MethodsClient methods = slack.methods(botToken);

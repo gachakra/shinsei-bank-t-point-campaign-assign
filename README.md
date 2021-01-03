@@ -11,7 +11,21 @@ This app automatically visits Shinsei Bank T-point campaign page and assigns the
 ```
 ### 2. Then configure your settings on copied yml files below
 - `src/main/resources/form.yml`
+  ```yaml
+  form:
+    userAgent: 
+    account: 
+    tPointNumber16Digits:
+    birthDate:
+    email:
+  ```
 - `src/main/resources/slack.yml`
+  
+  Create Slack app for reporting here https://api.slack.com/apps
+   ```yaml
+   channelId:
+   botToken: 
+   ```
 
 ## While developing
 ### Build application Docker image
