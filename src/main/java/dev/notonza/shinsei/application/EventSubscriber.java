@@ -1,7 +1,11 @@
-package dev.notonza.shinsei.event;
+package dev.notonza.shinsei.application;
 
 import com.google.inject.Inject;
-import dev.notonza.shinsei.report.SlackReporter;
+import dev.notonza.shinsei.domain.events.CompletionNotConfirmed;
+import dev.notonza.shinsei.domain.events.FoundTaskAlreadyDoneThisMonth;
+import dev.notonza.shinsei.domain.events.NetworkError;
+import dev.notonza.shinsei.domain.events.Success;
+import dev.notonza.shinsei.application.notification.SlackReporter;
 import lombok.extern.slf4j.Slf4j;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

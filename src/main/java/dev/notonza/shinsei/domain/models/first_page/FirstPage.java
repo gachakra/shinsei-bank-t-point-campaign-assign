@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.domain.first_page;
+package dev.notonza.shinsei.domain.models.first_page;
 
 import dev.notonza.shinsei.config.FormConfiguration;
 import org.jsoup.Connection;

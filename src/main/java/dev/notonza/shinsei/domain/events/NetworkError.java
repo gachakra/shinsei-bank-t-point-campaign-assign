@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.event;
+package dev.notonza.shinsei.domain.events;
 
 /**
  * @author gachakra

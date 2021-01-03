@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.report;
+package dev.notonza.shinsei.application.notification;
 
 /**
  * @author gachakra

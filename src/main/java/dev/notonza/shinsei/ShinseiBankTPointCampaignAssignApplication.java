@@ -2,7 +2,7 @@ package dev.notonza.shinsei;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import dev.notonza.shinsei.event.EventSubscriber;
+import dev.notonza.shinsei.application.EventSubscriber;
 import dev.notonza.shinsei.shared.Time;
 import dev.notonza.shinsei.usecase.TPointCampaignAssignUseCase;
 import lombok.extern.slf4j.Slf4j;

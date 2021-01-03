@@ -1,7 +1,7 @@
-package dev.notonza.shinsei.domain.first_page;
+package dev.notonza.shinsei.domain.models.first_page;
 
-import dev.notonza.shinsei.domain.AbstractForm;
-import dev.notonza.shinsei.domain.Form;
+import dev.notonza.shinsei.domain.models.AbstractForm;
+import dev.notonza.shinsei.domain.models.Form;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.FormElement;

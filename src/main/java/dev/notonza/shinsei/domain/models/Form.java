@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.domain;
+package dev.notonza.shinsei.domain.models;
 
 import org.jsoup.Connection;
 

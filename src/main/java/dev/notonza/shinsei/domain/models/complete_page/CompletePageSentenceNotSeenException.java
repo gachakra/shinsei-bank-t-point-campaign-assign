@@ -1,4 +1,4 @@
-package dev.notonza.shinsei.domain.complete_page;
+package dev.notonza.shinsei.domain.models.complete_page;
 
 import com.google.common.base.Strings;
 

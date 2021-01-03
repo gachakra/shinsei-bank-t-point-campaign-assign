@@ -1,7 +1,7 @@
 package dev.notonza.shinsei.infrastructure;
 
-import dev.notonza.shinsei.domain.JobExecutionHistoryRepository;
-import dev.notonza.shinsei.domain.TaskResult;
+import dev.notonza.shinsei.domain.models.JobExecutionHistoryRepository;
+import dev.notonza.shinsei.domain.models.TaskResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.input.ReversedLinesFileReader;
 
