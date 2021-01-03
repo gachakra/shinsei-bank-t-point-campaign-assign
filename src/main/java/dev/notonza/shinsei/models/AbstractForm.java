@@ -27,8 +27,8 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
         if (!value.getClass().isAssignableFrom(inputValueType)) {
             throw new IllegalArgumentException(
                 "Mismatched value types with selector [" + inputElement.selector() + "]\n"
-                    + "Input type [" + inputValueType.getName() + " ]\n"
-                    + "Value type [" + value.getClass().getName() + " ]"
+                    + "Input type [" + inputValueType.getName() + "]\n"
+                    + "Value type [" + value.getClass().getName() + "]"
             );
         }
 
@@ -56,7 +56,7 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
 
         throw new IllegalArgumentException(
             "Unexpected value type with selector [" + inputElement.selector() + "]\n"
-                + "Value type [" + inputValueType.getName() + " ]"
+                + "Value type [" + inputValueType.getName() + "]"
         );
     }
 
