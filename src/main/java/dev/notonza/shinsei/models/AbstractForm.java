@@ -25,13 +25,20 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
     public <T> Form value(I inputElement, T value) {
         Class<?> inputValueType = inputElement.valueType();
         if (!value.getClass().isAssignableFrom(inputValueType)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(
+                "Mismatched value types with selector [" + inputElement.selector() + "]\n"
+                    + "Input type [" + inputValueType.getName() + " ]\n"
+                    + "Value type [" + value.getClass().getName() + " ]"
+            );
         }
 
         Element input = formElement.select(inputElement.selector()).first();
+        if (input.html().isEmpty()) {
+            throw new IllegalArgumentException("Input html not found with selector [" + inputElement.selector() + "]");
+        }
 
         if (inputValueType == Integer.class) {
-            input.val( Integer.toString((int) value));
+            input.val(Integer.toString((int) value));
             return this;
         }
 
@@ -47,7 +54,10 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
             return this;
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException(
+            "Unexpected value type with selector [" + inputElement.selector() + "]\n"
+                + "Value type [" + inputValueType.getName() + " ]"
+        );
     }
 
     @Override
