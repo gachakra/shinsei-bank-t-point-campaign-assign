@@ -35,10 +35,10 @@ final public class JobExecutionHistoryFile implements JobExecutionHistoryReposit
             String current;
             while ((current = reader.readLine()) != null) {
                 if (current.contains(result.name())) {
-                    String latestSucceededDateTimeString = Arrays.asList(current.split("\t", -1)).get(0);
+                    String latestDateTimeStringOfGivenResult = Arrays.asList(current.split("\t", -1)).get(0);
 
                     return LocalDateTime.parse(
-                        latestSucceededDateTimeString,
+                        latestDateTimeStringOfGivenResult,
                         DateTimeFormatter.ISO_LOCAL_DATE_TIME);
                 }
             }
