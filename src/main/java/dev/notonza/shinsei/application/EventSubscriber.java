@@ -1,10 +1,7 @@
 package dev.notonza.shinsei.application;
 
 import com.google.inject.Inject;
-import dev.notonza.shinsei.domain.events.CompletionNotConfirmed;
-import dev.notonza.shinsei.domain.events.FoundTaskAlreadyDoneThisMonth;
-import dev.notonza.shinsei.domain.events.NetworkError;
-import dev.notonza.shinsei.domain.events.Success;
+import dev.notonza.shinsei.domain.events.*;
 import dev.notonza.shinsei.application.notification.SlackReporter;
 import lombok.extern.slf4j.Slf4j;
 import org.greenrobot.eventbus.Subscribe;
@@ -49,6 +46,13 @@ public class EventSubscriber {
     @Async.Schedule
     @Subscribe(threadMode = ThreadMode.ASYNC)
     public void onNetworkError(NetworkError event) {
+        log.error(event.toString());
+        slackReporter.postToChannel(event.getMessage());
+    }
+
+    @Async.Schedule
+    @Subscribe(threadMode = ThreadMode.ASYNC)
+    public void onSomethingWentWrong(SomethingWentWrong event) {
         log.error(event.toString());
         slackReporter.postToChannel(event.getMessage());
     }
