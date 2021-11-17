@@ -18,6 +18,10 @@
         <dict>
             <key>Day</key>
             <integer>1</integer>
+            <key>Hour</key>
+            <integer>1</integer>
+            <key>Minute</key>
+            <integer>13</integer>
         </dict>
         <key>StandardOutPath</key>
         <string>./logs/shinsei-bank-t-point-campaign-assign-launchd.out</string>
