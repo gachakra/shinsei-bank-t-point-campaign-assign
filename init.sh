@@ -7,6 +7,7 @@ PLIST="$PLIST_NAME.plist"
 ###########################################################################
 echo -e "Copying example file of YAML configuration files"
 
+# Not overriding
 cp -an src/main/resources/form.yml.example src/main/resources/form.yml
 cp -an src/main/resources/slack.yml.example src/main/resources/slack.yml
 
@@ -16,7 +17,8 @@ echo -e "Please configure settings on src/main/resources/slack.yml"
 ###########################################################################
 echo -e "Copying example file of $PLIST"
 
-cp -a \
+# Not overriding
+cp -an \
     ./"$PLIST".example \
     ./"$PLIST"
 
