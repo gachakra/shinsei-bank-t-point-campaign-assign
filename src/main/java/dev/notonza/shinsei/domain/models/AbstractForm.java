@@ -1,11 +1,13 @@
 package dev.notonza.shinsei.domain.models;
 
+import com.google.common.base.Strings;
 import org.jsoup.Connection;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.FormElement;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * @author gachakra
@@ -33,7 +35,7 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
         }
 
         Element input = formElement.select(inputElement.selector()).first();
-        if (input.html().isEmpty()) {
+        if (Objects.isNull(input) || Strings.isNullOrEmpty(input.toString())) {
             throw new IllegalArgumentException("Input html not found with selector [" + inputElement.selector() + "]");
         }
 
@@ -42,8 +44,7 @@ public abstract class AbstractForm<I extends Form.Input> implements Form<I> {
             return this;
         }
 
-        if (inputValueType == String.class
-            || inputValueType == Integer.class) {
+        if (inputValueType == String.class) {
             input.val((String) value);
             return this;
         }

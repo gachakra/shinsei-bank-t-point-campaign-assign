@@ -56,10 +56,10 @@ final public class TPointCampaignAssignUseCase {
                 .method(Connection.Method.GET)
                 .execute();
 
-            Thread.sleep(500);
+            Thread.sleep(999);
             Connection.Response confirmPageResponse = new FirstPage(firstPageResponse).submitForm(config);
 
-            Thread.sleep(500);
+            Thread.sleep(999);
             Connection.Response completePageResponse = new ConfirmPage(confirmPageResponse).submitForm(config);
 
             new CompletePage(completePageResponse).checkIfCompletionTextSeen();

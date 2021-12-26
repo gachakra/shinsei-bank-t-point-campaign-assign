@@ -37,6 +37,7 @@ public class FirstPage {
             .value(FirstPageForm.Input.IS_T_POINT_NUMBER_16_DIGITS, true)
             .value(FirstPageForm.Input.T_POINT_NUMBER_16_DIGITS, config.form().tPointNumber16Digits())
             .value(FirstPageForm.Input.EMAIL, config.form().email())
+            .value(FirstPageForm.Input.EMAIL_HIDDEN, config.form().email()) // added after filed
             .value(FirstPageForm.Input.ACCEPTS_POLICY, true)
             .cookies(firstPageResponse.cookies())
             .userAgent(config.form().userAgent())

@@ -14,7 +14,7 @@ final class FirstPageForm extends AbstractForm<FirstPageForm.Input> {
     static FirstPageForm fromResponseDocument(Document document) {
         Element form = document.select(SELECTOR).first();
         if (form.html().isEmpty()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Form html not found on the first page with selector [" + SELECTOR + "]");
         }
 
         return new FirstPageForm((FormElement) form);
@@ -30,6 +30,7 @@ final class FirstPageForm extends AbstractForm<FirstPageForm.Input> {
      */
     enum Input implements Form.Input {
 
+        TOKEN("input[name=org.apache.struts.taglib.html.TOKEN]", String.class), // added after failed TODO send
         ACCOUNT_NUMBER("input#fi_account_num", String.class),
         BIRTH_YEAR("input#fi_birth_year", Integer.class),
         BIRTH_MONTH("input#fi_birth_month", Integer.class),
@@ -38,6 +39,7 @@ final class FirstPageForm extends AbstractForm<FirstPageForm.Input> {
         IS_T_POINT_NUMBER_16_DIGITS("input#point_t_16", Boolean.class),
         T_POINT_NUMBER_16_DIGITS("input#fi_point_t16", String.class),
         EMAIL("input#fi_mail", String.class),
+        EMAIL_HIDDEN("input#fi_mail_r", String.class), // added after failed
         ACCEPTS_POLICY("input#fi_policy", Boolean.class);
 
         private String selector;
