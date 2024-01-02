@@ -1,6 +1,6 @@
-This app doesn't work anymore. It had worked until a certain point in 2021 or early 2022 but then scraping the website from the app seemed to be banned by the bank.
+This app (built with a rich architecture) doesn't work anymore. It had worked until a certain point in 2021 or early 2022 but then scraping the website from the app seemed to be banned by the bank.
 
-I think I've earned more than 10 T-points with this app for around 6 months. That was totally waste of time (with fun).
+I think I've earned more or less than 10 T-points with this app for around 6 months. That was totally waste of time (with fun).
 
 
 # shinse-bank-t-point-campaign-assign
